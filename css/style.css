@@ -1,0 +1,34 @@
+body {
+	margin-top: 50px;
+}
+
+section {
+	margin-top: 50px;
+}
+
+#myCarousel img {
+	width: 100%;
+}
+.brand-color {
+	color: green;
+}
+
+#search-box {
+	width: 250px;
+}
+
+#features .thumbnail {
+	border: none;
+}
+
+#features .thumbnail .btn{
+	width: 100%;
+}
+
+
+
+footer {
+	color: #fff;
+	background-color: #222222; 
+	overflow: auto;
+}
