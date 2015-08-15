@@ -25,10 +25,20 @@ section {
 	width: 100%;
 }
 
-
+ul {
+	padding-left: 0;
+}
+li {
+	text-decoration: none;
+	list-style: none;
+}
 
 footer {
 	color: #fff;
 	background-color: #222222; 
 	overflow: auto;
+}
+
+footer .row {
+	margin: 20px 10px;
 }
