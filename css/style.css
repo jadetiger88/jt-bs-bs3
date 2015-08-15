@@ -25,6 +25,18 @@ section {
 	width: 100%;
 }
 
+.label {
+	font-size: 18px;
+	position: absolute;
+	top: -5px;
+	right: 5px;
+	padding: 10px;
+}
+
+.label .tag {
+	margin-right: 15px;
+}
+
 ul {
 	padding-left: 0;
 }
