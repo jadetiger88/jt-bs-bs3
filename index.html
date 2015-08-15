@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jade</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.css">
   </head>
@@ -202,7 +202,7 @@
       <section class="row" id="moreInfo">
         <div class="col-sm-6">
 
-          <h1>Neat Tabbable Content</h1>
+          <h1>Neat Tabtable Content</h1>
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
             <li role="presentation" class="active"><a href="#section-1" aria-controls="section-1" role="tab" data-toggle="tab">Section 1</a></li>
@@ -243,7 +243,90 @@
                 </div>
               </div>  
               <hr>    
-              <a class="btn btn-warning">Click for a popup</a>       
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                  Launch demo modal
+                </button> 
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                      </div>
+                      <div class="modal-body">
+
+                        <div>
+                          <div id="text-in-modal">
+                            <h5>Text in a Modal</h5>
+                            <p>Ultrices posuere lectus aenean himenaeos ante sem donec erat, aenean lorem fames quisque quam neque sociosqu, eros scelerisque nibh posuere curae est suspendisse aliquet viverra volutpat scelerisque inceptos enim tincidunt per placerat vulputate.</p>
+                          </div>
+                          <hr>
+
+                          <div id="popup-in-modal">
+                            <h5>Popup on a Modal</h5>
+                            <button type="button" class="btn btn-default col-sm-3 col-sm-offset-2" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                              Popover on top
+                            </button>                            
+                            <div class="row">
+                            </div>
+                          </div>
+                          <hr>
+
+                          <div id="tool-tip-in-modal">
+                            <h5>Too-tip in a Modal</h5>
+                            <button type="button" class="btn btn-default col-sm-3 col-sm-offset-2" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                            <div class="row">
+                            </div>
+                          </div>
+                          <hr>
+
+                          <div id="form-in-modal">
+                            <h5>Form in a Modal</h5>
+                            <form class="form-horizontal">
+
+                              <div class="form-group">
+                                <label for="inputName" class="col-sm-2 control-label">Name</label>
+                                <div class="col-sm-8">
+                                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-8">
+                                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="inputMessage" class="col-sm-2 control-label">Message</label>
+                                <div class="col-sm-8">
+                                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>                              
+                                </div>
+                                <div class="col-sm-offset-2">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                  <button type="submit" class="btn btn-default">Send</button>
+                                </div>
+                              </div>
+
+                            </form>                          
+                          </div>
+                          
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>                             
             </div>
 
           </div>
@@ -259,7 +342,7 @@
            <div id="list-group">
               <h4>A List Group</h4>
               <div class="list-group">
-                <a href="#" class="list-group-item active">Cras justo odio</a>
+                <a href="#" class="list-group-item">Cras justo odio</a>
                 <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
                 <a href="#" class="list-group-item">Morbi leo risus</a>
                 <a href="#" class="list-group-item">Porta ac consectetur ac</a>
@@ -277,6 +360,7 @@
       <hr>
 
       <section class="row" id="moreCourses">
+        <h1>Learn Web Design</h1>
         <div class="row">
           <div class="col-sm-6">
             <div class="thumbnail">

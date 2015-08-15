@@ -54,3 +54,7 @@ footer {
 footer .row {
 	margin: 20px 10px;
 }
+
+footer .fa-heart {
+	color: red;
+}
